@@ -8,45 +8,73 @@
   
   <title>Frontend Mentor | Skilled e-learning landing page</title>
 </head>
-<body>
+<body class="container">
+  <nav class="nav">
+    <img class="nav__logo" src="./assets/logo-dark.svg" alt="Skilled logo" />
+    <button class="nav__btn" role="button">Get Started</button>
+  </nav>
 
-  Get Started
+  <header class="header">
+    <section class="header__content">
+      <h1 class="header__title">Maximize skill, minimize budget</h1>
+      <p class="header__text">Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
+      <button class="header__btn" role="button">Get Started</button>
+    </section>
+    
+    <picture class="header__image">
+      <source media="(min-width: 1400px)" srcset="./assets/image-hero-desktop.webp" type="image/webp">
+      <source media="(min-width: 1400px)" srcset="./assets/image-hero-desktop.png" type="image/png">
+      <source media="(min-width: 768px)" srcset="./assets/image-hero-tablet.webp" type="image/webp">
+      <source media="(min-width: 768px)" srcset="./assets/image-hero-tablet.png" type="image/png">
+      <source srcset="./assets/image-hero-mobile.webp" type="image/webp">
+      <img src="./assets/image-hero-mobile.png" alt="Hero image showing people learning and developing skills" class="header__img">
+    </picture>
+  </header>
 
-  Maximize skill, minimize budget
+  <main class="content">
+    <section class="content__box">
+      <h2>Check out our most popular courses!</h2>
+    </section>
+    
+    <section class="content__popular course">
+      <img src="./assets/icon-animation.svg" alt="Animation icon" class="course__icon" />
+      <h2 class="course__title">Animation</h2>
+      <p class="course__description">Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
+      <button class="course__btn" role="button">Get Started</button>
+    </section>
+    
+    <section class="content__popular course">
+      <img src="./assets/icon-design.svg" alt="Design icon" class="course__icon" />
+      <h2 class="course__title">Design</h2>
+      <p class="course__description">Create beautiful, usable interfaces to help shape the future of how the web looks.</p>
+      <button class="course__btn" role="button">Get Started</button>
+    </section>
+    
+    <section class="content__popular course">
+      <img src="./assets/icon-photography.svg" alt="Photography icon" class="course__icon" />
+      <h2 class="course__title">Photography</h2>
+      <p class="course__description">Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.</p>
+      <button class="course__btn" role="button">Get Started</button>
+    </section>
+    
+    <section class="content__popular course">
+      <img src="./assets/icon-crypto.svg" alt="Crypto icon" class="course__icon" />
+      <h2 class="course__title">Crypto</h2>
+      <p class="course__description">All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.</p>
+      <button class="course__btn" role="button">Get Started</button>
+    </section>
+    
+    <section class="content__popular course">
+      <img src="./assets/icon-business.svg" alt="Business icon" class="course__icon" />
+      <h2 class="course__title">Business</h2>
+      <p class="course__description">A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</p>
+      <button class="course__btn" role="button">Get Started</button>
+    </section>
+  </main>
 
-  Our modern courses across a range of in-demand skills will give you the 
-  knowledge you need to live the life you want.
-
-  Get Started
-
-  Check out our most popular courses!
-
-  Animation
-  Learn the latest animation techniques to create stunning motion 
-  design and captivate your audience.
-  Get Started
-
-  Design
-  Create beautiful, usable interfaces to help shape the future of 
-  how the web looks.
-  Get Started
-
-  Photography
-  Explore critical fundamentals like lighting, composition, and focus 
-  to capture exceptional photos.
-  Get Started
-
-  Crypto
-  All you need to know to get started investing in crypto. Go from beginner 
-  to advanced with this 54 hour course.
-  Get Started
-
-  Business
-  A step-by-step playbook to help you start, scale, and sustain your business 
-  without outside investment.
-  Get Started
-
-  Get Started
-
+  <footer class="footer">
+    <img src="./assets/logo-light.svg" class="footer__logo" alt="Skilled logo" />
+    <button class="footer__btn" role="button">Get Started</button>
+  </footer>
 </body>
 </html>
