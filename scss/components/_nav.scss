@@ -1,0 +1,29 @@
+@use "../utils/variables" as *;
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $spacing-4 $spacing-5;
+
+    &__logo {
+        height: 20px;
+        width: 79px;
+    }
+
+    &__btn {
+        padding: $spacing-4 $spacing-8;
+        background: $blue-900;
+        color: $white;
+        line-height: $line-height-normal;
+        font-size: $font-size-sm;
+        font-weight: $font-bold;
+        border-radius: 28px;
+        cursor: pointer;
+        transition: background .5s ease-in-out;
+
+        &:hover {
+            background: $blue-600;
+        }
+    }
+}
