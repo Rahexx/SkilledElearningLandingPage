@@ -1,0 +1,59 @@
+@use "../utils/variables" as *;
+
+.header{
+    margin: 0 auto;
+    padding: $spacing-16 $spacing-5;
+    width: 23.4375rem; // 375px
+
+    &__title {
+        line-height: $line-height-tight;
+        color: $blue-900;
+        font-size: $font-size-xl;
+        font-weight: $font-extra-bold;
+    }
+
+    &__text {
+        width: 20.375rem; // 326px
+        line-height: $line-height-normal;
+        margin: $spacing-6 0 $spacing-10;
+        color: $grey;
+        font-size: $font-size-sm;
+        font-weight: $font-medium;
+    }
+
+    &__btn {
+        position: relative;
+        padding: $spacing-4 $spacing-8;
+        background: $gradient-pink;
+        border-radius: 1.75rem; // 28px
+        cursor: pointer;
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(255, 255, 255, 0);
+            transition: background 0.3s ease;
+            z-index: 1;
+        }
+
+        &:hover::before {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        &--text {
+            position: relative;
+            line-height: $line-height-normal;
+            color: $white;
+            font-size: $font-size-sm;
+            font-weight: $font-bold;
+            z-index: 2;
+        }
+    }
+
+    &__image {
+        display: inline-block;
+        margin: $spacing-12 0 $spacing-16;
+    }
+}

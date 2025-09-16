@@ -4,11 +4,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
     padding: $spacing-4 $spacing-5;
+    width: 23.4375rem; // 375px
 
     &__logo {
-        height: 20px;
-        width: 79px;
+        height: 1.25rem; // 20px
+        width: 4.9375rem; // 79px
     }
 
     &__btn {
@@ -18,7 +20,7 @@
         line-height: $line-height-normal;
         font-size: $font-size-sm;
         font-weight: $font-bold;
-        border-radius: 28px;
+        border-radius: 1.75rem; // 28px
         cursor: pointer;
         transition: background .5s ease-in-out;
 
