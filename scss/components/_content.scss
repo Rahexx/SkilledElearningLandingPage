@@ -1,0 +1,25 @@
+@use "../utils/variables" as *;
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-8;
+    margin: 0 auto;
+    padding: $spacing-16 $spacing-5 $spacing-20;
+    width: 23.4375rem; // 375px
+
+    &__box {
+        padding: $spacing-8;
+        height: 7.625rem; // 122px
+        width: 20.9375rem; // 335px
+        background: $gradient-pink;
+        border-radius: 0.9375rem; // 15px
+
+        &--title {
+            line-height: $line-height-tight;
+            color: $white;
+            font-size: $font-size-base;
+            font-weight: $font-extra-bold;
+        }
+    }
+}
