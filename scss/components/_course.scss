@@ -1,0 +1,41 @@
+@use "../utils/variables" as *;
+
+.course {
+    position: relative;
+    margin-top: $spacing-7;
+    padding: $spacing-16 $spacing-8 $spacing-10;
+    height: 300px;
+    width: 335px;
+    background: $white;
+    border-radius: 15px;
+    box-shadow: 0 25px 50px 0 hsla(233, 92%,29%, 0.04);
+
+    &__icon {
+        position: absolute;
+        top: calc(-1 * $spacing-7);
+        left: $spacing-8;
+    }
+
+    &__title {
+        line-height: $line-height-tight;
+        color: $blue-900;
+        font-size: $font-size-md;
+        font-weight: $font-extra-bold;
+    }
+
+    &__description {
+        margin: $spacing-6 0;
+        line-height: $line-height-normal;
+        color: $grey;
+        font-size: $font-size-xs;
+        font-weight: $font-bold;
+    }
+
+    &__btn {
+        line-height: $line-height-normal;
+        color: $pink-600;
+        font-size: $font-size-sm;
+        font-weight: $font-bold;
+        background: transparent;
+    }
+}
