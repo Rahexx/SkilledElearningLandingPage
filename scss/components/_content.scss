@@ -1,4 +1,5 @@
 @use "../utils/variables" as *;
+@use "../utils/mixins" as *;
 
 .content {
     display: flex;
@@ -16,10 +17,7 @@
         border-radius: 0.9375rem; // 15px
 
         &--title {
-            line-height: $line-height-tight;
-            color: $white;
-            font-size: $font-size-base;
-            font-weight: $font-extra-bold;
+            @include text($font-size-base, $font-extra-bold, $line-height-tight, $white);
         }
     }
 }

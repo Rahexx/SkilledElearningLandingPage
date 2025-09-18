@@ -1,4 +1,5 @@
 @use "../utils/variables" as *;
+@use "../utils/mixins" as *;
 
 .nav{
     display: flex;
@@ -14,12 +15,9 @@
     }
 
     &__btn {
+        @include text($font-size-sm, $font-bold, $line-height-normal, $white);
         padding: $spacing-4 $spacing-8;
         background: $blue-900;
-        color: $white;
-        line-height: $line-height-normal;
-        font-size: $font-size-sm;
-        font-weight: $font-bold;
         border-radius: 1.75rem; // 28px
         cursor: pointer;
         transition: background .5s ease-in-out;

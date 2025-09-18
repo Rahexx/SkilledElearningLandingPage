@@ -1,4 +1,5 @@
 @use "../utils/variables" as *;
+@use "../utils/mixins" as *;
 
 .header{
     margin: 0 auto;
@@ -6,19 +7,13 @@
     width: 23.4375rem; // 375px
 
     &__title {
-        line-height: $line-height-tight;
-        color: $blue-900;
-        font-size: $font-size-xl;
-        font-weight: $font-extra-bold;
+        @include text($font-size-xl, $font-extra-bold, $line-height-tight, $blue-900);
     }
 
     &__text {
+        @include text($font-size-sm, $font-medium, $line-height-normal, $grey);
         width: 20.375rem; // 326px
-        line-height: $line-height-normal;
         margin: $spacing-6 0 $spacing-10;
-        color: $grey;
-        font-size: $font-size-sm;
-        font-weight: $font-medium;
     }
 
     &__btn {
@@ -43,11 +38,8 @@
         }
 
         &--text {
+            @include text($font-size-sm, $font-bold, $line-height-normal, $white);
             position: relative;
-            line-height: $line-height-normal;
-            color: $white;
-            font-size: $font-size-sm;
-            font-weight: $font-bold;
             z-index: 2;
         }
     }

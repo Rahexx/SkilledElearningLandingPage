@@ -1,14 +1,15 @@
 @use "../utils/variables" as *;
+@use "../utils/mixins" as *;
 
 .course {
     position: relative;
     margin-top: $spacing-7;
     padding: $spacing-16 $spacing-8 $spacing-10;
-    height: 300px;
-    width: 335px;
+    height: 18.75rem; // 300px
+    width: 20.9375rem; // 335px
     background: $white;
-    border-radius: 15px;
-    box-shadow: 0 25px 50px 0 hsla(233, 92%,29%, 0.04);
+    border-radius: 0.9375rem; // 15px
+    box-shadow: 0 1.5625rem 3.125rem 0 hsla(233, 92%, 29%, 0.04); // 0 25px 50px
 
     &__icon {
         position: absolute;
@@ -17,25 +18,17 @@
     }
 
     &__title {
-        line-height: $line-height-tight;
-        color: $blue-900;
-        font-size: $font-size-md;
-        font-weight: $font-extra-bold;
+        @include text($font-size-md, $font-extra-bold, $line-height-tight, $blue-900);
     }
 
     &__description {
+        @include text($font-size-xs, $font-bold, $line-height-normal, $grey);
         margin: $spacing-6 0;
-        line-height: $line-height-normal;
-        color: $grey;
-        font-size: $font-size-xs;
-        font-weight: $font-bold;
     }
 
     &__btn {
-        line-height: $line-height-normal;
-        color: $pink-600;
-        font-size: $font-size-sm;
-        font-weight: $font-bold;
+        @include text($font-size-sm, $font-bold, $line-height-normal, $pink-600);
         background: transparent;
+        border: none;
     }
 }
