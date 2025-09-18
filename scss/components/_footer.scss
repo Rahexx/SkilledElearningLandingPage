@@ -1,0 +1,51 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.footer {
+    padding: $spacing-6 0;
+    height: 6rem; // 96px
+    background: $blue-900;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        width: 20.9375rem; // 335px
+    }
+
+    &__logo {
+        display: inline-block;
+        height: 1.25rem; // 20px
+        width: 4.9375rem; // 79px
+    }
+
+    &__btn {
+        position: relative;
+        height: 3rem; // 48px
+        width: 9.5rem; // 152px
+        text-align: center;
+        background: $gradient-purple;
+        border-radius: 1.75rem; // 28px
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(255, 255, 255, 0);
+            transition: background 0.3s ease;
+            z-index: 1;
+        }
+
+        &:hover::before {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        &--text {
+            @include text($font-size-sm, $font-extra-bold, $line-height-normal, $white);
+            position: relative;
+            z-index: 2;
+        }
+    }
+}
