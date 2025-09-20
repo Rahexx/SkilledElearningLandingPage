@@ -49,3 +49,28 @@
         margin: $spacing-12 0 $spacing-16;
     }
 }
+
+@media(min-width: $breakpoint-tablet) {
+    .header{
+        padding: $spacing-24 0;
+        width: 680px;
+
+        &__title {
+            width: 20.375rem; // 326px
+        }
+    
+        &__btn {
+            padding: 0 $spacing-6;
+            height: 48px;
+
+        }
+    
+        &__image {
+            position: absolute;
+            top: -60px;
+            right: -280px;
+            margin: 0;
+            z-index: -1;
+        }
+    }
+}
