@@ -43,9 +43,15 @@
         }
 
         &--text {
-            @include text($font-size-sm, $font-extra-bold, $line-height-normal, $white);
+            @include text($font-size-sm, $font-bold, $line-height-normal, $white);
             position: relative;
             z-index: 2;
         }
+    }
+}
+
+@media(min-width: $breakpoint-tablet) {
+    .footer__content {
+        width: 680px;
     }
 }

@@ -3,4 +3,5 @@
 .container {
     font-family: $font-primary;
     background: $gradient-white;
+    overflow-x: hidden;
 }
