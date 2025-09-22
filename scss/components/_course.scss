@@ -32,3 +32,15 @@
         border: none;
     }
 }
+
+@media(min-width: $breakpoint-tablet) {
+    .course {
+        height: 322px;
+        width: 328px;
+    
+        &__description {
+            font-size: $font-size-sm;
+            font-weight: $font-medium;
+        }
+    }
+}
