@@ -21,3 +21,21 @@
         }
     }
 }
+
+@media(min-width: $breakpoint-tablet) {
+    .content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: $spacing-8 $spacing-6;
+        padding: $spacing-16 0 $spacing-36;
+        width: 42.5rem; // 680px
+    
+        &__box {
+            margin-top: $spacing-7;
+            padding: $spacing-16 $spacing-8;
+            height: 20.125rem; // 322px
+            width: 20.5rem; // 328px
+        }
+    }
+    
+}

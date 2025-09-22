@@ -35,8 +35,8 @@
 
 @media(min-width: $breakpoint-tablet) {
     .course {
-        height: 322px;
-        width: 328px;
+        height: 20.125rem; // 322px
+        width: 20.5rem; // 328px
     
         &__description {
             font-size: $font-size-sm;
