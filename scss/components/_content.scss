@@ -39,3 +39,15 @@
     }
     
 }
+
+@media(min-width: $breakpoint-desktop) {
+    .content {
+        gap: $spacing-14 $spacing-8;
+        width: 1120px;
+
+        &__box {
+            width: 352px;
+        }
+    }
+    
+}
