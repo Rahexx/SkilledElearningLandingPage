@@ -55,3 +55,23 @@
         width: 680px;
     }
 }
+
+@media(min-width: $breakpoint-desktop) {
+    .footer {
+        height: 107px;
+    
+        &__content {
+            width: 1120px;
+        }
+    
+        &__logo {
+            height: 28px;
+            width: 111px;
+        }
+    
+        &__btn {
+            height: 59px;
+            width: 168px;
+        }
+    }
+}
