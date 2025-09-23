@@ -42,3 +42,21 @@
         }
     }
 }
+
+@media(min-width: $breakpoint-desktop) {
+    .nav{
+        padding: $spacing-6 $spacing-40;
+        width: 1440px;
+    
+        &__logo {
+            height: 28px;
+            width: 111px
+        }
+    
+        &__btn {
+            padding: 0 $spacing-6;
+            height: 59px;
+            width: 168px;
+        }
+    }
+}
