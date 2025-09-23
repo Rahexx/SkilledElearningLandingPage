@@ -46,17 +46,17 @@
 @media(min-width: $breakpoint-desktop) {
     .nav{
         padding: $spacing-6 $spacing-40;
-        width: 1440px;
+        width: 90rem; // 1440px
     
         &__logo {
-            height: 28px;
-            width: 111px
+            height: 1.75rem; // 28px
+            width: 6.9375rem; // 111px
         }
     
         &__btn {
             padding: 0 $spacing-6;
-            height: 59px;
-            width: 168px;
+            height: 3.6875rem; // 59px
+            width: 10.5rem; // 168px
         }
     }
 }
