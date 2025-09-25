@@ -1,0 +1,56 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.course {
+    position: relative;
+    margin-top: $spacing-7;
+    padding: $spacing-16 $spacing-8 $spacing-10;
+    height: 18.75rem; // 300px
+    width: 20.9375rem; // 335px
+    background: $white;
+    border-radius: 0.9375rem; // 15px
+    box-shadow: 0 1.5625rem 3.125rem 0 hsla(233, 92%, 29%, 0.04); // 0 25px 50px
+
+    &__icon {
+        position: absolute;
+        top: calc(-1 * $spacing-7);
+        left: $spacing-8;
+    }
+
+    &__title {
+        @include text($font-size-md, $font-extra-bold, $line-height-tight, $blue-900);
+    }
+
+    &__description {
+        @include text($font-size-xs, $font-bold, $line-height-normal, $grey);
+        margin: $spacing-6 0;
+    }
+
+    &__btn {
+        @include text($font-size-sm, $font-bold, $line-height-normal, $pink-600);
+        background: transparent;
+        border: none;
+    }
+}
+
+@media(min-width: $breakpoint-tablet) {
+    .course {
+        height: 20.125rem; // 322px
+        width: 20.5rem; // 328px
+    
+        &__description {
+            font-size: $font-size-sm;
+            font-weight: $font-medium;
+        }
+    }
+}
+
+@media(min-width: $breakpoint-desktop) {
+    .course {
+        width: 22rem; // 352px
+    
+        &__title {
+            font-size: $font-size-base;
+        }
+    }
+}
