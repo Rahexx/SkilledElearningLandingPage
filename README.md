@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/Rahexx/SkilledElearningLandingPage)
-- Live Site URL: [LiveSite](https://your-live-site-url.com)
+- Live Site URL: [LiveSite](https://rahexx.github.io/SkilledElearningLandingPage/)
 
 ## My process
 
